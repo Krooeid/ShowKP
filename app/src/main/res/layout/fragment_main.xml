@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--Content-->
+    <LinearLayout
+        android:layout_margin="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <!--Logo-->
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!--User-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+           <!--Icon-->
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_action_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!--textfied-->
+             <EditText
+                android:inputType="text"
+                android:hint="User: "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            </LinearLayout>
+        <!--Password-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--Icon-->
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_action_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!--textfied-->
+            <EditText
+                android:inputType="textPassword"
+                android:hint="Password: "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!--Loging Button-->
+        <Button
+            android:text="login"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!--Register-->
+        <TextView
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="18dp"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="italic"
+            android:textSize="18sp"
+            android:text="New Resigter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
