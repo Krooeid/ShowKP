@@ -29,6 +29,22 @@ public class RegisterFragment extends Fragment{
         Toolbar toolbar = getActivity().findViewById(R.id.toolbarRegister);
         ((MainActivity)getActivity()).setSupportActionBar(toolbar);
 
+        //    Setup Tible
+        ((MainActivity) getActivity()).getSupportActionBar().setTitle("Register");
+        ((MainActivity) getActivity()).getSupportActionBar().setSubtitle("Please Fill All Blank");
+
+//        Setup Navigation Icon
+
+        ((MainActivity) getActivity()).getSupportActionBar().setHomeButtonEnabled(true);
+        ((MainActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getActivity().getSupportFragmentManager().popBackStack();
+            }
+        });
+
     }
 
     @Nullable
